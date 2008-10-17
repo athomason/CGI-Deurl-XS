@@ -1,0 +1,13 @@
+--- #YAML:1.0
+name:                CGI-Deurl-XS
+version:             0.07
+abstract:            Fast decoder for URL parameter strings
+license:             ~
+generated_by:        ExtUtils::MakeMaker version 6.36
+distribution_type:   module
+requires:     
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
+    version: 1.2
+author:
+    - Adam Thomason <athomason@sixapart.com>
