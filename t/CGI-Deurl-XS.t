@@ -3,7 +3,8 @@
 
 #########################
 
-use Test::More tests => 25;
+use Test::More tests => 26;
+use utf8;
 use_ok('CGI::Deurl::XS');
 
 #########################
@@ -61,6 +62,15 @@ is(parse_query_string("foo=ba\%72")->{foo}, 'bar',      'escape_a');
 
 # unicode
 {
-use encoding 'utf8';
-is(parse_query_string("foo=bar\%u1000")->{foo}, "bar\x{1000}", 'escape_u');
+    use utf8;
+    my $s = parse_query_string("foo=bar%E0%B2%A0xyz")->{foo};
+    utf8::decode($s);
+    is($s, "barಠxyz", 'escape_no_u');
+}
+
+{
+    # support for %uXXXX produced by javascript's escape()
+    my $s = parse_query_string("foo=bar\%u1000")->{foo};
+    utf8::decode($s);
+    is($s, "bar\x{1000}", 'escape_u');
 }

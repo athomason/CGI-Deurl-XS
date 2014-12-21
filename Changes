@@ -1,5 +1,8 @@
 Revision history for Perl extension CGI::Deurl::XS.
 
+0.08  Sun Dec 21 15:06:21 PST 2014
+	- remove use of deprecated encoding pragma, see
+      https://rt.cpan.org/Public/Bug/Display.html?id=101061
 0.07  Wed Jun 18 22:43:01 2008
 	- provide strndup since not all libc's have it
 0.06  Wed Jun 18 12:02:03 2008
