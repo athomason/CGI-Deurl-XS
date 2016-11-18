@@ -19,5 +19,9 @@ libparser$(LIB_EXT): $(O_FILES)
 	$(AR) cr libparser$(LIB_EXT) $(O_FILES)
 	$(RANLIB) libparser$(LIB_EXT)
 
-';
+'.($ExtUtils::MakeMaker::VERSION >= 7.16?'
+
+dynamic ::
+	$(NOECHO) $(NOOP)
+':''); #https://rt.cpan.org/Ticket/Display.html?id=117800
 }
