@@ -7,7 +7,7 @@ WriteMakefile1(
     VERSION_FROM      => 'XS.pm', # finds $VERSION
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ABSTRACT_FROM => 'XS.pm',
-    AUTHOR => 'Adam Thomason <athomason@sixapart.com>',
+    AUTHOR => 'Adam Thomason <athomason@cpan.org>',
     LIBS              => [''], # e.g., '-lm'
     DEFINE            => '', # e.g., '-DHAVE_SOMETHING'
     INC               => '-I.', # e.g., '-I. -I/usr/include/other'

@@ -15,7 +15,7 @@ name:      perl-CGI-Deurl-XS
 summary:   CGI-Deurl-XS - Fast decoder for URL parameter strings
 version:   0.05
 release:   1
-vendor:    Adam Thomason <athomason@sixapart.com>
+vendor:    Adam Thomason <athomason@cpan.org>
 packager:  Arix International <cpan2rpm@arix.com>
 license:   Artistic
 group:     Applications/CPAN

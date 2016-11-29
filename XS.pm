@@ -99,7 +99,7 @@ L<libapreq>
 
 =head1 AUTHOR
 
-Adam Thomason, E<lt>athomason@sixapart.comE<gt>
+Adam Thomason, E<lt>athomason@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
